@@ -2,9 +2,10 @@
 
 .head {
   height: 120px;
-  background-color: rgb(20, 8, 8);
+  background: rgba(12, 16, 19, 0.75);
   position: sticky;
   top: 0;
+  z-index: 1000;
   .header-container {
     padding: 0px 100px;
   }
