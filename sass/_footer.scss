@@ -1,0 +1,31 @@
+.footer-container {
+  height: 250px;
+  @include flex;
+  @include centering;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 30px 10px;
+  .footer-nav-container {
+    @include flex;
+    @include between;
+    width: 49%;
+    .footer-navigation {
+      @include flex;
+      @include between;
+      width: 100%;
+      .footer-ul {
+        @include flex;
+        @include between;
+        gap: 20px;
+      }
+      .footer-socials {
+        @include flex;
+        @include between;
+      }
+    }
+  }
+  .footer-rights {
+    @include text-centering;
+    width: 51%;
+  }
+}

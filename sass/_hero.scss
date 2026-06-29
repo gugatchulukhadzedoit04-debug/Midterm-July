@@ -1,1 +1,28 @@
 @import "utilities";
+
+.hero {
+  height: 688px;
+  background-image: url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  @include flex;
+  justify-content: center;
+  @include centering;
+  .hero-text {
+    @include text-centering;
+    margin-left: 40%;
+    h2 {
+      color: #dae2e4;
+      font-size: 48px;
+    }
+    hr {
+      width: 133px;
+      border: 1px solid #7f1b1d;
+      border-radius: 10px;
+    }
+    p {
+      max-width: 26rem;
+      color: #889ba2;
+    }
+  }
+}

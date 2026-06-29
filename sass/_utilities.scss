@@ -7,3 +7,19 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin between {
+  justify-content: space-between;
+}
+
+@mixin centering {
+  align-items: center;
+}
+
+@mixin text-centering {
+  text-align: center;
+}
