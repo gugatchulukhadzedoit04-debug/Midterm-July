@@ -1,0 +1,9 @@
+@import "./utilities";
+
+.homeshop {
+  min-height: 1500px;
+  background-color: #0a1117;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}

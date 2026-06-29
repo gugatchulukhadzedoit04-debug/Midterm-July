@@ -1,0 +1,18 @@
+@import "./utilities";
+
+.store-hero {
+  height: 425px;
+  background-image: url(../images/store-hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  @include flex;
+  @include centering;
+  @include text-centering;
+  h1 {
+    font-size: 38px;
+    color: #fff;
+    line-height: 40px;
+    margin-left: 65%;
+    margin-right: 15%;
+  }
+}
