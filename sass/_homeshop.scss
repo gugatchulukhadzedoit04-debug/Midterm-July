@@ -9,6 +9,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 40px;
+
     .shop-item-card {
       @include flex;
       @include centering;
@@ -41,9 +42,12 @@
           transition: transform 0.2s ease-in;
         }
         button:hover {
-          transform: scale(1.15);
+          transform: scale(1.05);
         }
       }
+      box-shadow: 2px 2px 100px 0px rgba(66, 66, 66, 0.5);
+      -webkit-box-shadow: 2px 2px 100px 0px rgba(66, 66, 66, 0.5);
+      -moz-box-shadow: 2px 2px 100px 0px rgba(66, 66, 66, 0.5);
     }
   }
 }

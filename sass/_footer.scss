@@ -1,10 +1,15 @@
+@import "./utilities";
+
 .footer-container {
-  height: 250px;
+  background-color: #000;
+  position: relative;
+  height: 400px;
   @include flex;
   @include centering;
   justify-content: space-evenly;
   flex-direction: column;
-  padding: 30px 10px;
+  padding: 30px 10px 0px;
+  gap: 15px;
   .footer-nav-container {
     @include flex;
     @include between;
@@ -13,19 +18,57 @@
       @include flex;
       @include between;
       width: 100%;
+      gap: 30px;
       .footer-ul {
         @include flex;
         @include between;
+        @include centering;
+        flex-direction: column;
         gap: 20px;
+        li {
+          width: 100%;
+          a {
+            color: #6a787d;
+          }
+          a:hover {
+            color: #681d20;
+          }
+        }
       }
       .footer-socials {
         @include flex;
-        @include between;
+        @include centering;
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 30px;
+        h3 {
+          font-size: 34px;
+          color: #dae2e4;
+        }
+        .footer-social-logos {
+          @include flex;
+          gap: 16px;
+          .social-logos {
+            border: 2px solid #000;
+            border-radius: 10px;
+            transition: transform 0.2s ease-in;
+          }
+          .social-logos:hover {
+            transform: scale(1.1);
+            border: 2px solid #681d20;
+          }
+        }
       }
     }
   }
-  .footer-rights {
-    @include text-centering;
-    width: 51%;
-  }
+}
+.footer-rights {
+  @include text-centering;
+  width: 51%;
+  color: #dae2e4;
+}
+.footer-logo {
+  position: absolute;
+  left: 8%;
+  text-align: center;
 }
