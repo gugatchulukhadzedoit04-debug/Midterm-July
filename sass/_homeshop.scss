@@ -1,15 +1,17 @@
+@import "./utilities";
+
 .homeshop {
   min-height: 822px;
   background-color: #0a1117;
-  padding: 72px 0px;
+  padding: 72px 120px;
   .home-shop-item {
     @include flex;
     @include centering;
     height: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 40px;
-
+    row-gap: 75px;
+    column-gap: 100px;
     .shop-item-card {
       @include flex;
       @include centering;
