@@ -19,7 +19,6 @@
             <li>
               <a href="store.html" class="header-nav-list-item">Store</a>
             </li>
-
             <li>
               <a href="contact.html" class="header-nav-list-item">Contact</a>
             </li>
@@ -32,60 +31,42 @@
           <button class="header-button">
             <a href="registration.html">SIGN UP</a>
           </button>
-          <button class="header-button"><a href="login.html">LOG IN</a></button>
         </div>
       </div>
     </header>
     <main>
-      <section class="store-hero">
-        <h1>TAKE A LOOK. SOMETHING'S BOUND TO CATCH YOUR EYE!</h1>
-      </section>
-      <section class="homeshop">
-        <div class="gameshop">
-          <div class="home-shop-item">
-            <div class="shop-item-card">
-              <div class="image-wrapper">
-                <img src="./images/base-game.jpg" alt="base game" />
-              </div>
-              <div class="shop-item-text">
-                <h2>Base Game</h2>
-                <p>29.99$</p>
-                <button>BUY NOW</button>
-              </div>
+      <section class="registration-main">
+        <div class="card">
+          <h1 class="card-header">Log in to your account</h1>
+
+          <form class="form" action="#">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="someone@example.com"
+                required
+              />
             </div>
-            <div class="shop-item-card">
-              <div class="image-wrapper">
-                <img src="./images/heart59-dlc.jpeg" alt="heart dlc" />
-              </div>
-              <div class="shop-item-text">
-                <h2>DLC</h2>
-                <p>9.99$</p>
-                <button>BUY NOW</button>
-              </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter Password"
+                maxlength="16"
+                required
+              />
             </div>
-            <div class="shop-item-card">
-              <div class="image-wrapper">
-                <img src="./images/montresor87-dlc.jpeg" alt="montresor dlc" />
-              </div>
-              <div class="shop-item-text">
-                <h2>DLC</h2>
-                <p>9.99$</p>
-                <button>BUY NOW</button>
-              </div>
+            <div class="forgot">
+              <a href="#" class="forgot-text">Forgot Password?</a>
             </div>
-            <div class="merch-poster">
-              <div class="merch-poster-container merch">
-                <button class="shopnow-btn">
-                  <a href="accessories.html">SHOP NOW</a>
-                </button>
-              </div>
-              <div class="merch-poster-container poster">
-                <button class="shopnow-btn">
-                  <a href="accessories.html">SHOP NOW</a>
-                </button>
-              </div>
-            </div>
-          </div>
+            <button type="submit" class="form-submit">LOG IN</button>
+          </form>
         </div>
       </section>
     </main>

@@ -39,6 +39,9 @@
         height: 40px;
         width: 100px;
         transition: transform 0.2s ease-out;
+        a {
+          color: rgb(243, 227, 227);
+        }
       }
       .header-button:hover {
         transform: scale(1.15);

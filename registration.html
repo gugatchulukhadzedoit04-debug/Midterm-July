@@ -19,7 +19,6 @@
             <li>
               <a href="store.html" class="header-nav-list-item">Store</a>
             </li>
-
             <li>
               <a href="contact.html" class="header-nav-list-item">Contact</a>
             </li>
@@ -29,63 +28,113 @@
           </ul>
         </nav>
         <div class="header-registration">
-          <button class="header-button">
-            <a href="registration.html">SIGN UP</a>
-          </button>
           <button class="header-button"><a href="login.html">LOG IN</a></button>
         </div>
       </div>
     </header>
     <main>
-      <section class="store-hero">
-        <h1>TAKE A LOOK. SOMETHING'S BOUND TO CATCH YOUR EYE!</h1>
-      </section>
-      <section class="homeshop">
-        <div class="gameshop">
-          <div class="home-shop-item">
-            <div class="shop-item-card">
-              <div class="image-wrapper">
-                <img src="./images/base-game.jpg" alt="base game" />
-              </div>
-              <div class="shop-item-text">
-                <h2>Base Game</h2>
-                <p>29.99$</p>
-                <button>BUY NOW</button>
-              </div>
+      <section class="registration-main">
+        <div class="card">
+          <h1 class="card-header">Create an Account</h1>
+
+          <form class="form" action="#">
+            <div class="form-group">
+              <label for="first-name">First name</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="Enter your name"
+                required
+              />
             </div>
-            <div class="shop-item-card">
-              <div class="image-wrapper">
-                <img src="./images/heart59-dlc.jpeg" alt="heart dlc" />
-              </div>
-              <div class="shop-item-text">
-                <h2>DLC</h2>
-                <p>9.99$</p>
-                <button>BUY NOW</button>
-              </div>
+
+            <div class="form-group">
+              <label for="last-name">Last name</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Enter your last name"
+                required
+              />
             </div>
-            <div class="shop-item-card">
-              <div class="image-wrapper">
-                <img src="./images/montresor87-dlc.jpeg" alt="montresor dlc" />
-              </div>
-              <div class="shop-item-text">
-                <h2>DLC</h2>
-                <p>9.99$</p>
-                <button>BUY NOW</button>
-              </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="someone@example.com"
+                required
+              />
             </div>
-            <div class="merch-poster">
-              <div class="merch-poster-container merch">
-                <button class="shopnow-btn">
-                  <a href="accessories.html">SHOP NOW</a>
-                </button>
-              </div>
-              <div class="merch-poster-container poster">
-                <button class="shopnow-btn">
-                  <a href="accessories.html">SHOP NOW</a>
-                </button>
-              </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter Password"
+                maxlength="16"
+                required
+              />
             </div>
-          </div>
+
+            <div class="form-group">
+              <label for="dob">Date of birth</label>
+              <input type="date" id="dob" name="dob" required />
+            </div>
+
+            <div class="form-group">
+              <label for="region">Region</label>
+              <select id="region" name="region" required>
+                <option value="" disabled selected>Select a region</option>
+                <option value="usa">USA</option>
+                <option value="eu">EU</option>
+                <option value="asia">ASIA</option>
+                <option value="aus">AUS</option>
+                <option value="afr">AFR</option>
+              </select>
+            </div>
+
+            <fieldset class="form-group-radio">
+              <legend>Choose Gender</legend>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="gender-male"
+                  name="gender"
+                  value="male"
+                  required
+                />
+                <label for="gender-male">Male</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="gender-female"
+                  name="gender"
+                  value="female"
+                  required
+                />
+                <label for="gender-female">Female</label>
+              </div>
+            </fieldset>
+
+            <div class="form-group-checkbox">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms"
+                >I agree to the Terms of Service and Privacy Policy</label
+              >
+            </div>
+
+            <button type="submit" class="form-submit">Register</button>
+          </form>
         </div>
       </section>
     </main>
