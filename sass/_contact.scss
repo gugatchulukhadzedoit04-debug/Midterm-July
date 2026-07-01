@@ -1,1 +1,78 @@
 @import "./utilities";
+
+.main-section {
+  background-color: #0a1117;
+  padding: 100px;
+  color: white;
+  .faq-heading {
+    padding-bottom: 50px;
+    font-size: 38px;
+    @include text-centering;
+  }
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    details {
+      width: 100%;
+      background-color: #111f2b;
+      padding: 1rem;
+      border: 2px solid #111f2b;
+      border-radius: 5px;
+      transition: transform 0.2s ease-in;
+      summary {
+        cursor: pointer;
+        display: inline;
+        padding-bottom: 10px;
+        h2 {
+          font-size: 26px;
+        }
+      }
+      p {
+        font-size: 18px;
+        padding-top: 15px;
+      }
+    }
+    details:hover {
+      border: 2px solid rgb(131, 130, 130);
+    }
+  }
+  .maillink {
+    color: aqua;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-section {
+    padding: 100px 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    padding: 75px 35px;
+    .faq-heading {
+      font-size: 28px;
+    }
+    .accordion-heading {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .main-section {
+    padding: 35px 15px;
+    .faq-heading {
+      font-size: 28px;
+    }
+    .accordion-heading {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
