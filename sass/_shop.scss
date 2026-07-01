@@ -43,3 +43,9 @@
     background-position: center;
   }
 }
+
+@media (max-width: 1000px) {
+  .merch-poster {
+    flex-wrap: wrap;
+  }
+}

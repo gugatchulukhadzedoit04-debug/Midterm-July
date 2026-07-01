@@ -72,3 +72,33 @@
   left: 8%;
   text-align: center;
 }
+
+@media (max-width: 940px) {
+  .footer-container {
+    height: 650px;
+    width: 100%;
+    .footer-logo {
+      position: initial;
+    }
+    .footer-navigation {
+      flex-direction: column-reverse;
+      .footer-ul {
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 551px) {
+  .footer-container {
+    .footer-nav-container {
+      .footer-navigation {
+        .footer-socials {
+          gap: 20px;
+          h3 {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}

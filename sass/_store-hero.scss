@@ -16,3 +16,12 @@
     margin-right: 15%;
   }
 }
+
+@media (max-width: 900px) {
+  .store-hero {
+    h1 {
+      max-width: 300px;
+      margin: auto;
+    }
+  }
+}

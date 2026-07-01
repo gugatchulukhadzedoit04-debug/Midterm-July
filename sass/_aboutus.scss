@@ -24,3 +24,39 @@
     padding-bottom: 30px;
   }
 }
+
+@media (max-width: 1200px) {
+  .aboutus {
+    padding: 40px 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .aboutus {
+    padding: 40px 75px;
+  }
+}
+
+@media (max-width: 800px) {
+  .aboutus {
+    padding: 40px 55px;
+    h1 {
+      font-size: 36px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutus {
+    padding: 40px 20px;
+  }
+}

@@ -54,11 +54,13 @@
     .faq-heading {
       font-size: 28px;
     }
-    .accordion-heading {
-      font-size: 20px;
-    }
-    p {
-      font-size: 14px;
+    .accordion {
+      .accordion-heading {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
     }
   }
 }
