@@ -1,5 +1,8 @@
 @import "./utilities";
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+}
 .registration-main {
   background-color: #0a1117;
   color: black; //delete this later
